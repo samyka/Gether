@@ -10,6 +10,7 @@
       "integrity": "sha1-X6rZwsB/YN12dw9xzwJbYqY8/U4=",
       "dev": true
     },
+
     "accepts": {
       "version": "1.3.5",
       "resolved": "https://registry.npmjs.org/accepts/-/accepts-1.3.5.tgz",
@@ -18,6 +19,7 @@
         "mime-types": "~2.1.18",
         "negotiator": "0.6.1"
       }
+
     },
     "acorn": {
       "version": "5.5.3",
@@ -56,6 +58,7 @@
         }
       }
     },
+
     "ajv": {
       "version": "5.5.2",
       "resolved": "https://nexus.bigengine.io/repository/npm-public/ajv/-/ajv-5.5.2.tgz",
@@ -66,12 +69,14 @@
         "fast-json-stable-stringify": "^2.0.0",
         "json-schema-traverse": "^0.3.0"
       }
+
     },
     "ajv-keywords": {
       "version": "2.1.1",
       "resolved": "https://nexus.bigengine.io/repository/npm-public/ajv-keywords/-/ajv-keywords-2.1.1.tgz",
       "integrity": "sha1-YXmX/F9gV2iUxDX5QNgZ4TW4B2I="
     },
+
     "align-text": {
       "version": "0.1.4",
       "resolved": "https://nexus.bigengine.io/repository/npm-public/align-text/-/align-text-0.1.4.tgz",
@@ -97,6 +102,7 @@
       "resolved": "https://nexus.bigengine.io/repository/npm-public/ansi-regex/-/ansi-regex-2.1.1.tgz",
       "integrity": "sha1-w7M6te42DYbg5ijwRorn7yfWVN8="
     },
+
     "ansi-styles": {
       "version": "2.2.1",
       "resolved": "https://nexus.bigengine.io/repository/npm-public/ansi-styles/-/ansi-styles-2.2.1.tgz",
@@ -117,6 +123,7 @@
         "tar-stream": "^1.5.0",
         "zip-stream": "^1.2.0"
       },
+
       "dependencies": {
         "async": {
           "version": "2.6.1",
@@ -165,6 +172,7 @@
       "integrity": "sha1-jCpe8kcv2ep0KwTHenUJO6J1fJM=",
       "dev": true
     },
+
     "array-flatten": {
       "version": "1.1.1",
       "resolved": "https://registry.npmjs.org/array-flatten/-/array-flatten-1.1.1.tgz",
@@ -2280,6 +2288,7 @@
         "require_optional": "~1.0.0"
       }
     },
+    
     "mongoose": {
       "version": "4.13.11",
       "resolved": "https://nexus.bigengine.io/repository/npm-public/mongoose/-/mongoose-4.13.11.tgz",
