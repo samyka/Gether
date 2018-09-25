@@ -1,0 +1,69 @@
+<div class="create-container">
+  <div class="create-card">
+    <div class="create-column">
+      <img id="created-image" src="" />
+    </div>
+    <div class="divider">
+    </div>
+    <div class="create-column">
+      <h2 class="form-title">
+        <img alt="Add new item" src="/img/add.svg" />
+        Create item
+      </h2>
+
+      <form class="input-form" action="/items/create" method="post" >
+        <label for="title-input" class="form-label">Title</label>
+        <input 
+            value="{{newItem.title}}" 
+            id="title-input"
+            name="title"
+            type="text"
+            maxlength="50"
+            placeholder="Write a title"
+        >
+        {{#with newItem.errors.title as |error|}}
+          <span class="error">{{error.message}}</span>
+        {{/with}}
+        <label for="description-input" class="form-label">Description</label>
+        <textarea 
+          value="{{newItem.description}}"
+          id="description-input"
+          name="description"
+          placeholder="Write a description"
+        ></textarea>
+        {{#with newItem.errors.description as |error|}}
+          <span class="error">{{error.message}}</span>
+        {{/with}}
+        <label for="imageUrl-input" class="form-label">Image url</label>
+        <input 
+          value="{{newItem.imageUrl}}" 
+          id="imageUrl-input" 
+          name="imageUrl"
+          type="text"
+          placeholder="Write an image url"
+        >
+        {{#with newItem.errors.imageUrl as |error|}}
+          <span class="error">{{error.message}}</span>
+        {{/with}}
+
+         <div class="form-navigation">
+          <a href="/">
+            <img class="back-arrow" src="/img/back.svg" alt="back">
+            Come back
+          </a>   
+          <button id="submit-button" class="submit-button" type="submit">
+            <p>Add new item</p>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+  var img = document.getElementById('created-image');
+  function handleChange(e) {
+    var path = e.target.value.match(/^(https*:\/\/)/i) ? '' : 'http://';
+    img.src = path + e.target.value;
+  }
+  document.getElementById('imageUrl-input').oninput = handleChange;
+</script>
